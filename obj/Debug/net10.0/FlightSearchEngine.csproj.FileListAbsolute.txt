@@ -38,3 +38,6 @@
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/FlightSearchEngine.genruntimeconfig.cache
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/ref/FlightSearchEngine.dll
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/compressed/yfvja9082b-{0}-9wpk6qs8a4-9wpk6qs8a4.gz
+/Users/mohammedbelouarraq/Desktop/WebServices/bin/Debug/net10.0/flight-search-engine/components.json
+/Users/mohammedbelouarraq/Desktop/WebServices/bin/Debug/net10.0/flight-search-engine/package.json
+/Users/mohammedbelouarraq/Desktop/WebServices/bin/Debug/net10.0/flight-search-engine/tsconfig.json
