@@ -98,7 +98,20 @@ public class AmadeusService : IAmadeusService
         }
 
         var content = await response.Content.ReadAsStringAsync();
-        var result = JsonConvert.DeserializeObject<FlightSearchResponse>(content);
+        
+        var settings = new JsonSerializerSettings
+        {
+            Error = (sender, args) => 
+            {
+                // Ignore errors in Dictionaries property
+                if (args.ErrorContext.Path?.Contains("dictionaries") == true)
+                {
+                    args.ErrorContext.Handled = true;
+                }
+            }
+        };
+        
+        var result = JsonConvert.DeserializeObject<FlightSearchResponse>(content, settings);
         
         return result ?? new FlightSearchResponse();
     }
