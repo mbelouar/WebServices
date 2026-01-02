@@ -26,7 +26,6 @@
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/scopedcss/bundle/FlightSearchEngine.styles.css
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/compressed/nae35hyynb-{0}-ourunw8esf-ourunw8esf.gz
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/compressed/c75cxa9fan-{0}-3t2rsghsos-3t2rsghsos.gz
-/Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/compressed/yfvja9082b-{0}-p15fax7cp9-p15fax7cp9.gz
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/staticwebassets.build.json
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/staticwebassets.build.json.cache
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/staticwebassets.development.json
@@ -38,3 +37,4 @@
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/FlightSearchEngine.pdb
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/FlightSearchEngine.genruntimeconfig.cache
 /Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/ref/FlightSearchEngine.dll
+/Users/mohammedbelouarraq/Desktop/WebServices/obj/Debug/net10.0/compressed/yfvja9082b-{0}-dip0v58ae1-dip0v58ae1.gz
