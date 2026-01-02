@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FlightSearchEngine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0454375cc9f56945639f220943a89139119cb1b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e7c1e7dee9dffb4113a8da8c0f6d492ea67d454")]
 [assembly: System.Reflection.AssemblyProductAttribute("FlightSearchEngine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FlightSearchEngine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

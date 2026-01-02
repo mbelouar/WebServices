@@ -49,14 +49,15 @@ body {
     background-attachment: fixed;
     color: var(--text-dark);
     min-height: 100vh;
-    padding: 24px;
-    line-height: 1.6;
+    padding: 16px;
+    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -65,21 +66,21 @@ header {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 32px 40px;
-    border-radius: var(--radius-xl);
+    padding: 20px 28px;
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-xl);
-    margin-bottom: 32px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .header-content {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
 }
 
 .header-content i {
-    font-size: 2.75rem;
+    font-size: 2rem;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -89,44 +90,45 @@ header {
 
 h1 {
     color: var(--text-dark);
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
     background: linear-gradient(135deg, var(--text-dark), var(--text-medium));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin: 0;
 }
 
 h2 {
     color: var(--text-dark);
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    letter-spacing: -0.3px;
+    gap: 10px;
+    letter-spacing: -0.2px;
 }
 
 h2 i {
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 h3 {
     color: var(--text-dark);
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
 }
 
 h3 i {
     color: var(--primary-color);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 /* Card Styles */
@@ -134,8 +136,8 @@ h3 i {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: var(--radius-xl);
+    padding: 24px;
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-2xl);
     border: 1px solid rgba(255, 255, 255, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -149,11 +151,11 @@ h3 i {
 /* Trip Type Selection */
 .trip-type {
     display: flex;
-    gap: 16px;
-    margin-bottom: 32px;
+    gap: 12px;
+    margin-bottom: 20px;
     background: var(--bg-secondary);
-    padding: 6px;
-    border-radius: var(--radius-lg);
+    padding: 4px;
+    border-radius: var(--radius-md);
     width: fit-content;
 }
 
@@ -162,11 +164,12 @@ h3 i {
     align-items: center;
     cursor: pointer;
     font-weight: 600;
-    padding: 12px 24px;
-    border-radius: var(--radius-md);
+    padding: 8px 18px;
+    border-radius: var(--radius);
     transition: all 0.3s ease;
     color: var(--text-medium);
     position: relative;
+    font-size: 0.9rem;
 }
 
 .trip-type input[type="radio"] {
@@ -187,9 +190,9 @@ h3 i {
 /* Form Styles */
 .form-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    margin-bottom: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-bottom: 20px;
 }
 
 .form-group {
@@ -199,25 +202,25 @@ h3 i {
 
 .form-group label {
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     color: var(--text-dark);
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 0.95rem;
+    gap: 6px;
+    font-size: 0.85rem;
 }
 
 .form-group label i {
     color: var(--primary-color);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .form-group input,
 .form-group select {
-    padding: 14px 16px;
+    padding: 10px 12px;
     border: 2px solid var(--border-color);
-    border-radius: var(--radius-md);
-    font-size: 1rem;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
     transition: all 0.3s ease;
     background: var(--bg-primary);
     color: var(--text-dark);
@@ -306,16 +309,16 @@ h3 i {
 /* Filters Section */
 .filters-section {
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
-    padding: 28px;
-    border-radius: var(--radius-lg);
-    margin-bottom: 32px;
+    padding: 18px;
+    border-radius: var(--radius-md);
+    margin-bottom: 20px;
     border: 1px solid var(--border-color);
 }
 
 .filters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
 }
 
 .checkbox-label {
@@ -372,22 +375,21 @@ h3 i {
 .btn-primary {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     color: white;
-    padding: 16px 32px;
+    padding: 12px 24px;
     border: none;
-    border-radius: var(--radius-lg);
-    font-size: 1.1rem;
+    border-radius: var(--radius-md);
+    font-size: 0.9rem;
     font-weight: 700;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 10px;
     width: 100%;
     transition: all 0.3s ease;
     box-shadow: var(--shadow-lg);
     letter-spacing: 0.3px;
     text-transform: uppercase;
-    font-size: 0.95rem;
 }
 
 .btn-primary:hover {
@@ -407,23 +409,23 @@ h3 i {
 /* Loading Indicator */
 .loading-indicator {
     text-align: center;
-    padding: 60px 40px;
+    padding: 40px 28px;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
-    border-radius: var(--radius-xl);
+    border-radius: var(--radius-lg);
     box-shadow: var(--shadow-2xl);
-    margin-top: 32px;
+    margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .spinner {
-    border: 5px solid var(--border-light);
-    border-top: 5px solid var(--primary-color);
+    border: 4px solid var(--border-light);
+    border-top: 4px solid var(--primary-color);
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     animation: spin 0.8s linear infinite;
-    margin: 0 auto 24px;
+    margin: 0 auto 16px;
 }
 
 @keyframes spin {
@@ -439,19 +441,19 @@ h3 i {
 
 /* Results Section */
 .results-section {
-    margin-top: 32px;
+    margin-top: 20px;
 }
 
 .results-header {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
-    padding: 24px 32px;
-    border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+    padding: 16px 20px;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 16px;
     box-shadow: var(--shadow-lg);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-bottom: 2px solid var(--border-color);
@@ -491,10 +493,10 @@ h3 i {
 
 .results-count {
     background: rgba(255, 255, 255, 0.98);
-    padding: 16px 32px;
+    padding: 12px 20px;
     color: var(--text-medium);
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -502,17 +504,17 @@ h3 i {
 .flight-results {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
-    padding: 32px;
-    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+    padding: 20px;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
     box-shadow: var(--shadow-2xl);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .flight-card {
     border: 2px solid var(--border-color);
-    border-radius: var(--radius-lg);
-    padding: 32px;
-    margin-bottom: 24px;
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-bottom: 16px;
     transition: all 0.3s ease;
     cursor: pointer;
     background: var(--bg-primary);
@@ -546,39 +548,39 @@ h3 i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
 }
 
 .flight-price {
-    font-size: 2.5rem;
+    font-size: 1.9rem;
     font-weight: 800;
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    letter-spacing: -1px;
+    letter-spacing: -0.5px;
 }
 
 .flight-currency {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: var(--text-light);
     font-weight: 600;
 }
 
 .flight-itinerary {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .itinerary-title {
     font-weight: 700;
     color: var(--text-dark);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 1.1rem;
+    gap: 8px;
+    font-size: 0.95rem;
 }
 
 .itinerary-title i {
@@ -589,11 +591,11 @@ h3 i {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
-    gap: 24px;
-    padding: 20px;
+    gap: 16px;
+    padding: 14px;
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
-    border-radius: var(--radius-md);
-    margin-bottom: 12px;
+    border-radius: var(--radius);
+    margin-bottom: 10px;
     border: 1px solid var(--border-light);
 }
 
@@ -603,16 +605,16 @@ h3 i {
 }
 
 .segment-time {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     font-weight: 800;
     color: var(--text-dark);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
 }
 
 .segment-location {
-    font-size: 1rem;
+    font-size: 0.85rem;
     color: var(--text-medium);
-    margin-top: 6px;
+    margin-top: 4px;
     font-weight: 600;
 }
 
@@ -657,11 +659,11 @@ h3 i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 24px;
-    padding-top: 24px;
+    margin-top: 16px;
+    padding-top: 16px;
     border-top: 2px solid var(--border-light);
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 12px;
 }
 
 .flight-footer > div:first-child {
@@ -671,20 +673,20 @@ h3 i {
 
 .flight-details-btn,
 .flight-edit-btn {
-    padding: 12px 24px;
+    padding: 8px 16px;
     border: 2px solid var(--primary-color);
     background: white;
     color: var(--primary-color);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius);
     font-weight: 700;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 0.9rem;
+    gap: 6px;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
 }
 
 .flight-details-btn:hover,
@@ -702,12 +704,12 @@ h3 i {
 }
 
 .badge {
-    padding: 8px 16px;
+    padding: 5px 12px;
     border-radius: var(--radius-full);
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
     box-shadow: var(--shadow-sm);
 }
 
@@ -756,9 +758,9 @@ h3 i {
 
 .modal-content {
     background-color: var(--bg-primary);
-    padding: 40px;
-    border-radius: var(--radius-xl);
-    max-width: 900px;
+    padding: 24px;
+    border-radius: var(--radius-lg);
+    max-width: 800px;
     width: 100%;
     position: relative;
     box-shadow: var(--shadow-2xl);
@@ -802,25 +804,25 @@ h3 i {
 }
 
 .detail-section {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .detail-section h3 {
     color: var(--primary-color);
-    margin-bottom: 20px;
-    font-size: 1.3rem;
+    margin-bottom: 14px;
+    font-size: 1.1rem;
 }
 
 .detail-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
 }
 
 .detail-item {
-    padding: 20px;
+    padding: 14px;
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
-    border-radius: var(--radius-md);
+    border-radius: var(--radius);
     border: 1px solid var(--border-light);
     transition: transform 0.2s ease;
 }
@@ -842,7 +844,7 @@ h3 i {
 .detail-value {
     font-weight: 700;
     color: var(--text-dark);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .no-results {
@@ -881,19 +883,20 @@ h3 i {
 /* Responsive Design */
 @media (max-width: 768px) {
     body {
-        padding: 16px;
+        padding: 12px;
+        font-size: 13px;
     }
     
     header {
-        padding: 24px;
+        padding: 16px;
     }
     
     h1 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
     
     .card {
-        padding: 24px;
+        padding: 18px;
     }
     
     .form-grid,
@@ -904,12 +907,12 @@ h3 i {
     .results-header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 20px;
+        padding: 14px;
     }
 
     .flight-segment {
         grid-template-columns: 1fr;
-        gap: 16px;
+        gap: 12px;
     }
 
     .segment-duration {
@@ -917,16 +920,16 @@ h3 i {
     }
 
     .flight-price {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     .flight-card {
-        padding: 24px;
+        padding: 16px;
     }
     
     .modal-content {
-        padding: 24px;
-        margin: 20px;
+        padding: 18px;
+        margin: 16px;
     }
 }
 
